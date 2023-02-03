@@ -1,0 +1,24 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="Doctor Name">
+      <mat-header-cell *matHeaderCellDef> DoctorName </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.doctorName}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="Day">
+      <mat-header-cell *matHeaderCellDef> Day </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.day}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="From">
+      <mat-header-cell *matHeaderCellDef> From </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.slot.from}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="To">
+      <mat-header-cell *matHeaderCellDef> To </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.slot.to}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

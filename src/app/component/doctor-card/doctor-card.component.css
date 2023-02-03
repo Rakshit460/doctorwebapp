@@ -1,0 +1,17 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?w=740&t=st=1675317526~exp=1675318126~hmac=e28ad2ee99be677341db9eb703b76b8c4f7c662fb63caf6d6e2b0b1b12dbf443');
+    background-size: cover;
+  }
+  
+
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+}
